@@ -1,0 +1,26 @@
+{
+  "name": "ci-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrentWillems/CI-integration.git"
+  },
+  "author": "Brent Willems",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrentWillems/CI-integration/issues"
+  },
+  "homepage": "https://github.com/BrentWillems/CI-integration#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
+}
