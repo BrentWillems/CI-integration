@@ -9,6 +9,14 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged":{
+    "*.js": ["eslint --fix ", "git add"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BrentWillems/CI-integration.git"
@@ -29,6 +37,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.8.2",
     "jest": "^25.2.7",
+    "lint-staged": "^10.1.1",
     "supertest": "^4.0.2"
   }
 }
