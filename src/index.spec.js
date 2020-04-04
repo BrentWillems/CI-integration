@@ -1,9 +1,12 @@
-const request = require('supertest')
+const supertest = require('supertest')
 const app = require('./index.js')
-describe('Post Endpoints', () => {
-  it('should start', async () => {
-    const res = await request(app).get('/');
-     
-    expect(res.statusCode).toEqual(200)
+const request = supertest(app);
+
+
+describe('Server', () => {
+  it('should start', async done => {
+    const res = await request.get('/');
+    expect(res.statusCode).toBe(200);
+    done();
   })
 })
